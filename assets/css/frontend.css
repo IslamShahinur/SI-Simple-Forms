@@ -1,0 +1,50 @@
+/* SI Simple Forms — Frontend form styles */
+.si-simple-form { max-width: 560px; }
+.si-simple-form .si-f-field { margin-bottom: 16px; }
+.si-simple-form .si-f-field label { display: block; font-size: 14px; font-weight: 700; margin-bottom: 6px; color: #0f172a; }
+.si-simple-form .si-f-field label .si-req { color: #dc2626; }
+.si-simple-form .si-f-field small { display: block; font-size: 11.5px; color: #64748b; margin-top: 4px; }
+.si-simple-form input[type=text],
+.si-simple-form input[type=email],
+.si-simple-form input[type=tel],
+.si-simple-form input[type=date],
+.si-simple-form select,
+.si-simple-form textarea {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid var(--si-input-border, #d1d5db);
+    border-radius: var(--si-radius, 8px);
+    font-size: 14px;
+    background: #fff;
+    font-family: inherit;
+}
+.si-simple-form textarea { min-height: 110px; resize: vertical; }
+.si-simple-form .si-f-consent { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; margin-bottom: 16px; }
+.si-simple-form .si-f-divider { border: 0; border-top: 1px solid #e2e8f0; margin: 18px 0; }
+.si-simple-form .si-f-heading { font-size: 16px; font-weight: 700; margin: 4px 0 14px; }
+.si-simple-form button[type=submit] {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--si-btn-color, #2b3fe0);
+    color: #fff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: var(--si-btn-radius, 8px);
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+.si-simple-form button[type=submit]:hover { filter: brightness(1.08); }
+.si-simple-form .si-f-turnstile-wrap { margin-bottom: 16px; }
+.si-simple-form .si-f-notice { padding: 10px 14px; border-radius: 8px; font-size: 13px; margin-bottom: 16px; }
+.si-simple-form .si-f-notice.success { background: #ecfdf5; color: #059669; }
+.si-simple-form .si-f-notice.error { background: #fef2f2; color: #dc2626; }
+
+/* ==========================================================================
+   v1.0 UPGRADE — ADDITIVE STYLES (no existing rules modified)
+   ========================================================================== */
+
+/* Privacy & Data Retention consent link (rendered by both frontends forms) */
+.si-simple-form .si-f-consent .si-privacy-link { color: #2563eb; text-decoration: underline; }
+.si-simple-form .si-f-consent .si-privacy-link:hover { color: #1d4ed8; }
